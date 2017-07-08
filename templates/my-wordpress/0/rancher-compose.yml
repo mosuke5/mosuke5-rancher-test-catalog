@@ -1,0 +1,35 @@
+.catalog:
+  name: "Wordpress"
+  version: "v0.1-educaas1"
+  description: "Blog tool, publishing platform and CMS"
+  uuid: Wordpress-0
+  minimum_rancher_version: v0.51.0
+  questions:    
+    - variable: public_port
+      description: "public port to access the wordpress site"
+      label: "Public Port"
+      required: true
+      default: "80"
+      type: "int"
+    - variable: db_host
+      label: "DB HOST"
+      required: true
+      default: "localhost"
+      type: "string"
+    - variable: db_user
+      label: "DB USER"
+      required: true
+      default: "wordpress"
+      type: "string"
+    - variable: db_password
+      label: "DB PASSWORD"
+      required: true
+      default: "Test1234"
+      type: "string"
+    - variable: db_name
+      label: "DB NAME"
+      required: true
+      default: "wordpress"
+      type: "string"
+
+wordpress:
